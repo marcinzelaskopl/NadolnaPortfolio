@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
+import {
+    HashRouter,
+    Route,
+    Link,
+    Switch,
+    NavLink,
+} from 'react-router-dom'
 import video from './videos/omg.mp4'
+import About from './About.js'
 
 class Nav extends React.Component {
     render(){
         return (
             <div>
                 <ul className={'nav'}>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About</Link></li>
                     <li><a>Projects</a></li>
-                    <li><a>Contact</a></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                 </ul>
             </div>
         )
@@ -27,7 +35,7 @@ class Main extends React.Component {
                             <source src={video} type={'video/mp4'}/>
                         </video>
                         <h1>Asia Nadolna</h1>
-                        <h2>Artist/Graphic/Designer</h2>
+                        <h2>Artist / <span className={'slash-style'}>Graphic</span> / Designer</h2>
                         <button>CONTINUE</button>
                     </div>
                 </div>
@@ -36,19 +44,40 @@ class Main extends React.Component {
     }
 }
 
+class Front extends React.Component {
+    render(){
+        return (
+            <div>
+                <Main/>
+            </div>
+        )
+    }
+}
+
+class NotFound extends React.Component {
+    render(){
+        return (
+            <h1>404, Nothing is here</h1>
+        )
+    }
+}
 
 
 
 
-class App extends Component {
-  render() {
-    return (
-        <div>
-            <Nav/>
-            <Main/>
-        </div>
-    );
-  }
+class App extends React.Component {
+    render() {
+        return <HashRouter>
+            <div>
+                <Nav/>
+            <Switch>
+                <Route exact path='/' component={Front} />
+                <Route path='/about' component={About}/>
+                <Route component={NotFound}/>
+            </Switch>
+            </div>
+        </HashRouter>;
+    }
 }
 
 export default App;

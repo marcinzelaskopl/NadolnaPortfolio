@@ -4,6 +4,24 @@
   padding: 0;
   box-sizing: border-box; }
 
+.animate {
+  overflow: auto;
+  height: 100vh;
+  background-color: #03a9f4;
+  transition: transform 0.5s, opacity 0.5s; }
+  .animate.transition-appear {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  .animate.transition-appear.transition-appear-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); }
+  .animate.transition-leave {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); }
+  .animate.transition-leave.transition-leave-active {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+
 .grid-container {
   width: 100%;
   max-width: 2000px;
@@ -63,9 +81,14 @@
   height: 7vh;
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
-  .nav a:hover {
-    cursor: pointer; }
+  align-items: center;
+  border-bottom: 3px solid aquamarine; }
+  .nav a {
+    text-decoration: none; }
+    .nav a:visited {
+      color: white; }
+    .nav a:hover {
+      cursor: pointer; }
   .nav li {
     padding: 20px;
     list-style: none;
@@ -90,25 +113,54 @@
   align-items: center;
   flex-direction: column; }
   .background-holder h1 {
+    font-size: 50px;
     margin-top: 80px;
     margin-bottom: 50px;
-    border-bottom: 2px solid black; }
+    border-bottom: 3px solid aquamarine; }
   .background-holder h2 {
     font-style: italic; }
 
 button {
+  position: relative;
   font-size: 15px;
   font-weight: bold;
   border: 2px solid white;
   background-color: transparent;
   width: 200px;
   height: 50px;
-  margin-top: 100px; }
-  button:hover {
-    cursor: pointer;
+  margin-top: 100px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all; }
+  button:before {
+    -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
-    background-color: black;
-    color: aquamarine;
-    border: 2px solid aquamarine; }
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: aquamarine;
+    z-index: -2; }
+  button:hover {
+    color: white;
+    cursor: pointer; }
+    button:hover:before {
+      -webkit-transition: 0.8s all ease;
+      transition: 0.8s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1; }
+
+.slash-style {
+  color: aquamarine; }
+
+.info-section {
+  height: 93vh;
+  background-color: aquamarine; }
+
+.youtube-section {
+  height: 93vh; }
 
 /*# sourceMappingURL=App.css.map */

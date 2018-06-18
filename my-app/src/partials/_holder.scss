@@ -15,9 +15,10 @@
   align-items: center;
   flex-direction: column;
     h1 {
+      font-size: 50px;
       margin-top: 80px;
       margin-bottom: 50px;
-      border-bottom: 2px solid black;
+      border-bottom: 3px solid aquamarine;
     }
     h2 {
       font-style: italic;
@@ -25,6 +26,7 @@
 }
 
 button {
+  position: relative;
   font-size: 15px;
   font-weight: bold;
   border: 2px solid white;
@@ -32,11 +34,36 @@ button {
   width: 200px;
   height: 50px;
   margin-top: 100px;
-  &:hover {
-    cursor: pointer;
-    transition: 0.5s all ease;
-    background-color: black;
-    color: aquamarine;
-    border: 2px solid aquamarine;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  &:before {
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:aquamarine;
+    z-index:-2;
   }
+  &:hover {
+    color: white;
+    cursor: pointer;
+    &:before {
+      -webkit-transition:0.8s all ease;
+      transition:0.8s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+}
+
+
+
+.slash-style {
+  color: aquamarine;
 }
