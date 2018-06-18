@@ -1,8 +1,22 @@
 .nav {
+  background: black;
+  color: white;
+  height: 7vh;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+    a {
+      &:hover {
+        cursor: pointer;
+      }
+    }
     li {
+      padding: 20px;
       list-style: none;
-      margin-left: 20px;
+      margin-right: 3px;
+      &:hover {
+        background-color: rgba(white, 0.1);
+        cursor: pointer;
+      }
     }
 }
