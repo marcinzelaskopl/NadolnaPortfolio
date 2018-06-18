@@ -28,7 +28,7 @@ class Main extends React.Component {
                         </video>
                         <h1>Asia Nadolna</h1>
                         <h2>Artist/Graphic/Designer</h2>
-                        <span className={'arrow'}></span>
+                        <button>CONTINUE</button>
                     </div>
                 </div>
                 </div>
@@ -36,21 +36,6 @@ class Main extends React.Component {
     }
 }
 
-
-class About extends React.Component {
-    render() {
-        return (
-            <div className={'grid-container about'}>
-                <div className={'row'}>
-                    <div className={'col-6 photo-section'}>
-                    </div>
-                    <div className={'col-6 info-section'}>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
 
 
 
@@ -61,7 +46,6 @@ class App extends Component {
         <div>
             <Nav/>
             <Main/>
-            <About/>
         </div>
     );
   }
