@@ -6,6 +6,8 @@ import {
     Link,
     Switch,
     NavLink,
+    withRouter,
+    Redirect,
 } from 'react-router-dom'
 import video from './videos/omg.mp4'
 import About from './About.js'
@@ -18,12 +20,22 @@ class Nav extends React.Component {
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><a>Projects</a></li>
-                    <li><Link to='/contact'>Contact</Link></li>
                 </ul>
             </div>
         )
     }
 }
+
+class ContinueButton extends React.Component{
+
+
+    render(){
+        return(
+            <Link className='button' to='/about'>CONTINUE</Link>
+        )
+    }
+}
+
 
 class Main extends React.Component {
     render(){
@@ -31,12 +43,12 @@ class Main extends React.Component {
             <div className={'grid-container'}>
                 <div className={'row'}>
                     <div className="col-12 background-holder">
-                        <video className={'video-background'} autoPlay muted loop playsInline>
+                        <video className={'video-background'} autoPlay muted playsInline>
                             <source src={video} type={'video/mp4'}/>
                         </video>
-                        <h1>Asia Nadolna</h1>
+                        <h1 className={'slide-left'}>Asia Nadolna</h1>
                         <h2>Artist / <span className={'slash-style'}>Graphic</span> / Designer</h2>
-                        <button>CONTINUE</button>
+                        <ContinueButton/>
                     </div>
                 </div>
                 </div>
