@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom'
 import video from './videos/omg.mp4'
 import About from './About.js'
+import Projects from "./Projects";
 
 class Nav extends React.Component {
     render(){
@@ -19,7 +20,7 @@ class Nav extends React.Component {
                 <ul className={'nav'}>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/about'>About</Link></li>
-                    <li><a>Projects</a></li>
+                    <li><Link to='/projects'>Projects</Link></li>
                 </ul>
             </div>
         )
@@ -40,7 +41,7 @@ class ContinueButton extends React.Component{
 class Main extends React.Component {
     render(){
         return(
-            <div className={'grid-container'}>
+            <div className={'grid-container front'}>
                 <div className={'row'}>
                     <div className="col-12 background-holder">
                         <video className={'video-background'} autoPlay muted playsInline>
@@ -85,6 +86,7 @@ class App extends React.Component {
             <Switch>
                 <Route exact path='/' component={Front} />
                 <Route path='/about' component={About}/>
+                <Route path='/projects' component={Projects}/>
                 <Route component={NotFound}/>
             </Switch>
             </div>

@@ -1,11 +1,12 @@
 .nav {
+  position: sticky;
   background: black;
   color: white;
   height: 7vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-bottom: 3px solid aquamarine;
+  z-index: 100;
     a {
       &:visited {
         color: white;
