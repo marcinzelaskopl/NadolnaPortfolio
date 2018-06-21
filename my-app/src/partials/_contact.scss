@@ -64,13 +64,14 @@ label {
 }
 
 .direct-info {
-  background-color: #ECE2D0;
+  background-color: #7A6563;
   height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
    p {
+     color: white;
      font-size: 20px;
    }
 

@@ -1,60 +1,145 @@
 .projects-holder {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
   height: 93vh;
-  background-color: aquamarine;
+  background-color: #7A6563;
 }
 
-.projects-light {
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-  border: 2px solid white;
-  background-color: transparent;
-  width: 300px;
-  height: 80px;
-  margin-top: 40px;
-  -webkit-transition:0.3s all ease;
-  transition:0.3s ease all;
-  &:before {
-    -webkit-transition:0.5s all ease;
-    transition:0.5s all ease;
-    top:0;
-    left:50%;
-    right:50%;
-    bottom:0;
-    opacity:0;
-    content:'';
-    background-color:white;
-    z-index:-2;
-  }
+//.projects-light {
+//  text-decoration: none;
+//  color: black;
+//  font-size: 25px;
+//  font-weight: bold;
+//  border: 2px solid white;
+//  background-color: transparent;
+//  width: 300px;
+//  height: 80px;
+//  margin-top: 40px;
+//  -webkit-transition:0.3s all ease;
+//  transition:0.3s ease all;
+//  &:before {
+//    -webkit-transition:0.5s all ease;
+//    transition:0.5s all ease;
+//    top:0;
+//    left:50%;
+//    right:50%;
+//    bottom:0;
+//    opacity:0;
+//    content:'';
+//    background-color:white;
+//    z-index:-2;
+//  }
+//  &:hover {
+//    color: white;
+//    cursor: pointer;
+//    &:before {
+//      -webkit-transition:0.8s all ease;
+//      transition:0.8s all ease;
+//      left:0;
+//      right:0;
+//      opacity:1;
+//    }
+//  }
+//}
+
+.first-item {
+  pointer-events: none;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
-    color: white;
-    cursor: pointer;
-    &:before {
-      -webkit-transition:0.8s all ease;
-      transition:0.8s all ease;
-      left:0;
-      right:0;
-      opacity:1;
+    transition: 1.5s;
+    background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/35191369_621724901520776_9068286875239710720_n.jpg?_nc_cat=0&oh=cf2b0cc42c4207f1103d54cd2ab6dd19&oe=5BA27BB9");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  p {
+    pointer-events: auto;
+    color: aquamarine;
+    font-size: 30px;
+    &:hover {
+      text-decoration: line-through;
+      cursor: pointer;
     }
   }
 }
 
-.photo {
-  animation:flip-in-hor-top .5s cubic-bezier(.25,.46,.45,.94) both;
-  @keyframes flip-in-hor-top{0%{transform:rotateX(-80deg);opacity:0}100%{transform:rotateX(0);opacity:1}};
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 300px;
+.second-item {
+  pointer-events: none;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    transition: 1.5s;
+    background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/35239606_621724448187488_8039987772326412288_n.jpg?_nc_cat=0&oh=fc5f9cd4f027c236b83bb0b996ba3e5d&oe=5BBF630F");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  p {
+    pointer-events: auto;
+    color: aquamarine;
+    font-size: 30px;
+    &:hover {
+      text-decoration: line-through;
+      cursor: pointer;
+    }
+  }
 }
 
-.photo-gal {
+.third-item {
+  pointer-events: none;
+  height: 93vh;
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  &:hover {
+    transition: 1.5s;
+    background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/35123840_621724684854131_3490236865934524416_n.jpg?_nc_cat=0&oh=87d6b8d8439bcb64d4ddd1be9d3d28be&oe=5BAE522A");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  p {
+    pointer-events: auto;
+    color: aquamarine;
+    font-size: 30px;
+    &:hover {
+      text-decoration: line-through;
+      cursor: pointer;
+    }
+  }
 }
+
+.forth-item {
+  pointer-events: none;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    transition: 1.5s;
+    background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/34585533_618036835222916_5612697330093391872_n.jpg?_nc_cat=0&oh=0d2243b87283852e5eee78f06debd8a3&oe=5BBDE957");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  p {
+    pointer-events: auto;
+    color: aquamarine;
+    font-size: 30px;
+    &:hover {
+      text-decoration: line-through;
+      cursor: pointer;
+    }
+  }
+}
+
+.col-3 {
+  p {
+    animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
+  }
+}
+
