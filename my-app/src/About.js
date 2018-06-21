@@ -12,6 +12,10 @@ class SectionAbout extends React.Component {
             <div className={'grid-container about'}>
                 <div className={'row'}>
                     <div className={'col-6 info-section'}>
+                        <p className={'youtube-header'}>Check out my Youtube channel!</p>
+                        <iframe className={'movie'} width={820} height={515} src={'https://www.youtube.com/embed/58qG-CuNPLw'}></iframe>
+                    </div>
+                    <div className={'col-6 youtube-section'}>
                         <img src={logo}/>
                         <p>
                             For last couple of years I have been trying to develop my skills in two areas.
@@ -21,14 +25,10 @@ class SectionAbout extends React.Component {
                             For that couple of years I experienced what hard work is and taught myself self-discipline.</p>
                         <p>You can find me on some social medias</p>
                         <div className={'icons'}>
-                        <a target={'_blank'} href={'https://www.behance.net/asianadolna'}><img src={behance}/></a>
-                        <a target={'_blank'} href={'https://www.linkedin.com/in/joanna-nadolna-b79952142/'}><img src={linkedin}/></a>
-                        <a target={'_blank'} href={'https://www.instagram.com/sobiewymysl/'}><img src={instagram}/></a>
+                            <a target={'_blank'} href={'https://www.behance.net/asianadolna'}><img src={behance}/></a>
+                            <a target={'_blank'} href={'https://www.linkedin.com/in/joanna-nadolna-b79952142/'}><img src={linkedin}/></a>
+                            <a target={'_blank'} href={'https://www.instagram.com/sobiewymysl/'}><img src={instagram}/></a>
                         </div>
-                    </div>
-                    <div className={'col-6 youtube-section'}>
-                        <p className={'youtube-header'}>Check out my Youtube channel!</p>
-                        <iframe width={520} height={415} src={'https://www.youtube.com/embed/58qG-CuNPLw'}></iframe>
                     </div>
                 </div>
             </div>

@@ -2,3 +2,59 @@
   height: 93vh;
   background-color: aquamarine;
 }
+
+.projects-light {
+  align-self: center;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid white;
+  background-color: transparent;
+  width: 300px;
+  height: 80px;
+  margin-top: 40px;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  &:before {
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:aquamarine;
+    z-index:-2;
+  }
+  &:hover {
+    color: white;
+    cursor: pointer;
+    &:before {
+      -webkit-transition:0.8s all ease;
+      transition:0.8s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+}
+
+.photo {
+  animation:flip-in-hor-top .5s cubic-bezier(.25,.46,.45,.94) both;
+  @keyframes flip-in-hor-top{0%{transform:rotateX(-80deg);opacity:0}100%{transform:rotateX(0);opacity:1}};
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+}
+
+.photo-gal {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
