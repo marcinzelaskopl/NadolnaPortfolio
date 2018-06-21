@@ -1,0 +1,113 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both;
+  @keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+}
+
+.contact-form {
+  background-color: aquamarine;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 1px solid black;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+  &:hover {
+
+  }
+}
+
+.submit {
+  background-color: white;
+  cursor: pointer;
+  $color: black;
+  color: $color;
+
+  &:hover {
+    animation: stripes-move 0.75s infinite linear;
+    background: repeating-linear-gradient(45deg, $color 0, $color 0.25em, transparent 0.25em, transparent .5em);
+    color: adjust-hue($color,180);
+  }
+}
+
+@keyframes stripes-move {
+  100% {
+    background-position: 5em 0px;
+  }
+}
+
+textarea {
+  border: 1px solid black;
+  margin-top: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+label {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.form-title {
+  font-size: 60px;
+  margin-bottom: 20px;
+  animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.direct-info {
+  background-color: #ECE2D0;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   p {
+     font-size: 20px;
+   }
+
+  img {
+    margin-top: 80px;
+    &:hover {
+      transition: 0.2s;
+      transform: scale(1.25);
+    }
+  }
+}
+
+.logo {
+  margin-top: -100px;
+  border-radius: 50%;
+}
+
+.first-link {
+   animation:slide-in-right 0.75s cubic-bezier(.25,.46,.45,.94) both;
+ }
+
+.second-link {
+  animation:slide-in-left 0.75s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.third-link {
+  animation:slide-in-right 0.75s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.first-text {
+  animation:slide-in-right 0.75s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.second-text {
+  animation:slide-in-left 0.75s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.third-text {
+  animation:slide-in-right 0.75s cubic-bezier(.25,.46,.45,.94) both;
+}

@@ -12,6 +12,7 @@ import {
 import video from './videos/omg.mp4'
 import About from './About.js'
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 class Nav extends React.Component {
     render(){
@@ -21,6 +22,7 @@ class Nav extends React.Component {
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/projects'>Projects</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                 </ul>
             </div>
         )
@@ -87,6 +89,7 @@ class App extends React.Component {
                 <Route exact path='/' component={Front} />
                 <Route path='/about' component={About}/>
                 <Route path='/projects' component={Projects}/>
+                <Route path={'/contact'} component={Contact}/>
                 <Route component={NotFound}/>
             </Switch>
             </div>

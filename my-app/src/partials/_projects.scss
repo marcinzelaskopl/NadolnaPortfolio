@@ -1,13 +1,14 @@
 .projects-holder {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 93vh;
   background-color: aquamarine;
 }
 
 .projects-light {
-  align-self: center;
   text-decoration: none;
   color: black;
-  position: relative;
   font-size: 25px;
   font-weight: bold;
   border: 2px solid white;
@@ -20,14 +21,13 @@
   &:before {
     -webkit-transition:0.5s all ease;
     transition:0.5s all ease;
-    position:absolute;
     top:0;
     left:50%;
     right:50%;
     bottom:0;
     opacity:0;
     content:'';
-    background-color:aquamarine;
+    background-color:white;
     z-index:-2;
   }
   &:hover {
