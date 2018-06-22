@@ -13,6 +13,7 @@ import video from './videos/omg.mp4'
 import About from './About.js'
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Portraits from "./Portraits";
 
 class Nav extends React.Component {
     render(){
@@ -90,6 +91,7 @@ class App extends React.Component {
                 <Route path='/about' component={About}/>
                 <Route path='/projects' component={Projects}/>
                 <Route path={'/contact'} component={Contact}/>
+                <Route path={'/projects/portraits'} component={Portraits}/>
                 <Route component={NotFound}/>
             </Switch>
             </div>

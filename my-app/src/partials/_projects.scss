@@ -139,6 +139,8 @@
 
 .col-3 {
   p {
+    font-style: italic;
+    font-weight: bold;
     animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
   }
 }

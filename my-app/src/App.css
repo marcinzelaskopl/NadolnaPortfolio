@@ -380,6 +380,8 @@
       cursor: pointer; }
 
 .col-3 p {
+  font-style: italic;
+  font-weight: bold;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 form {

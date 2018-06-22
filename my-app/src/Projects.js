@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
 // const images = [
