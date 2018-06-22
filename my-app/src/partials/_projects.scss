@@ -42,7 +42,6 @@
 //}
 
 .first-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -55,7 +54,6 @@
     background-repeat: no-repeat;
   }
   p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px;
     &:hover {
@@ -66,7 +64,6 @@
 }
 
 .second-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -79,7 +76,6 @@
     background-repeat: no-repeat;
   }
   p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px;
     &:hover {
@@ -90,7 +86,6 @@
 }
 
 .third-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -103,7 +98,6 @@
     background-repeat: no-repeat;
   }
   p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px;
     &:hover {
@@ -114,7 +108,6 @@
 }
 
 .forth-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -127,7 +120,6 @@
     background-repeat: no-repeat;
   }
   p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px;
     &:hover {

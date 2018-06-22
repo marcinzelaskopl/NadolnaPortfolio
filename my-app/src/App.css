@@ -300,7 +300,6 @@
   background-color: #7A6563; }
 
 .first-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -312,7 +311,6 @@
     background-position: center;
     background-repeat: no-repeat; }
   .first-item p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px; }
     .first-item p:hover {
@@ -320,7 +318,6 @@
       cursor: pointer; }
 
 .second-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -332,7 +329,6 @@
     background-position: center;
     background-repeat: no-repeat; }
   .second-item p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px; }
     .second-item p:hover {
@@ -340,7 +336,6 @@
       cursor: pointer; }
 
 .third-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -352,7 +347,6 @@
     background-position: center;
     background-repeat: no-repeat; }
   .third-item p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px; }
     .third-item p:hover {
@@ -360,7 +354,6 @@
       cursor: pointer; }
 
 .forth-item {
-  pointer-events: none;
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -372,7 +365,6 @@
     background-position: center;
     background-repeat: no-repeat; }
   .forth-item p {
-    pointer-events: auto;
     color: aquamarine;
     font-size: 30px; }
     .forth-item p:hover {
